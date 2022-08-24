@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* background-color: rgb(9, 12, 61); */
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+    font-family: sans-serif;
+    color: white;
+    padding: 20px
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+.cont-1 {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.25rem;
+    border-radius: 12px;
+}
+
+p {
+    font-weight: 300;
+}
+
+.cont-1>.ig {
+    position: relative;
+}
+
+.cont-1>.ig>img {
+
+    border-radius: 20px;
+}
+
+.cont-1>.ig>div {
+    position: absolute;
+    top: 0;
+    background-color: rgba(22, 178, 206, 0.45);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.5 ease-in-out;
+}
+
+.cont-1 .ig div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.cont-1>.ig>div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.one {
+    color: hsl(350, 100%, 100%);
+    margin: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+}
+
+.one:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+.two {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.cont-1>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border: 1px solid rgb(255, 255, 255);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#ti {
+    color: aqua;
+}
+
+/* text-align: center; */
+ul>li {
+    display: flex;
+    align-items: center;
+}
+
+ul>li>img {
+    margin-right: 0.5rem;
+}
+
+
+
+
+ul {
+    list-style: none;
+}
+
+.cont-2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 2rem;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.cont-2>img {
+    width: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.cont-2>p {
+    padding-left: 0.5rem;
+}
+
+em {
+    color: white;
+}
+
+.cont-2>p>em:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+@media screen and (min-width:500px) {
+    .cont-1 {
+        width: 450px;
+        margin: 0 auto 1rem;
+    }
+}
